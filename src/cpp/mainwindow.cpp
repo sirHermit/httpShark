@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "../headers/mainwindow.h"
 #include "ui_mainwindow.h"
 #include "QMessageBox"
 
@@ -31,5 +31,5 @@ void MainWindow::on_lineEdit_returnPressed()
 
 void MainWindow::on_actionAbout_triggered()
 {
-    QMessageBox::about(this,"httpShark","Program for testing HTTP-responses.\n(c) Volodymyr Fedyk");
+    QMessageBox::about(this,"httpShark","Program for testing HTTP-responses.\n(c) sirHermit");
 }

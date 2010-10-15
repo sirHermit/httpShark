@@ -7,14 +7,20 @@
 QT       += core gui webkit network xmlpatterns
 
 TARGET = httpShark
+DESTDIR = bin
 TEMPLATE = app
 
+# Anti-trash ;)
+OBJECTS_DIR = temp
+MOC_DIR = temp
+UI_DIR = temp
+RCC_DIR = temp
 
-SOURCES += main.cpp\
-        mainwindow.cpp
+SOURCES += src/cpp/main.cpp\
+        src/cpp/mainwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += src/headers/mainwindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += src/ui/mainwindow.ui
 
 RESOURCES +=
